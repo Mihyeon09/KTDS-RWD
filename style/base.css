@@ -13,7 +13,7 @@ body *::after {
 }
 
 a {
-  color: inherit;
+  color: inherit; /* 부모로 부터 상속받은 컬러 적용 */
   text-decoration: none;
 }
 
