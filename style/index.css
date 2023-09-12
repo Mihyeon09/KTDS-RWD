@@ -117,6 +117,44 @@ body {
     flex-flow: row nowrap;
     gap: var(--spacing-xs);
   }
+
+        /* 데스크탑 메인 메뉴 */
+        .menu{
+        background-color: #ece4d2;
+        }
+        .menu__list{
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-between;
+         margin: 0 auto;
+         height: 3.5rem;
+         align-items: center;
+         max-width: var(--container-width);
+        }
+
+        .menu__item{
+        display: flex;
+         overflow: hidden;
+         white-space: nowrap;
+        }
+
+
+        .menu__link{
+            display: block;
+            color: #2b2118;
+            font-weight: 700;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        .menu__link:hover{
+            /* text-decoration: underline; */
+            font-weight: 800;
+            color: #ffffff;
+            background-color: rgb(143, 117, 100);
+            border-radius: 1.5rem;
+        } 
+         /* 데스크탑 메인 콘텐츠 */
+     
   
 
   /* 모바일 디바이스 */
@@ -199,11 +237,18 @@ body {
         transform: translateY(-50%) rotate(-45deg);
     }
 
+
   }
 
 
 /* 데스크탑 디바이스 */
 @media (min-width: 768px) {
+    /* 데스크탑 공통 */
+    .appHeader, .menu__list, .appMain, .appFooter {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: var(--container-width);
+    }
     /* 데스크탑 헤더 */
     .appHeader {
       display: grid;
@@ -235,10 +280,6 @@ body {
     .buttonWrapper {
       display: none;
     }
-  
-    /* 데스크탑 메인 메뉴 */
-   
-    /* 데스크탑 메인 콘텐츠 */
 
 
   }
