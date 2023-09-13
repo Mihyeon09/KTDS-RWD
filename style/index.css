@@ -331,6 +331,25 @@ iframe {
   margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
 }
 
+/* 공통 푸터 */
+.appFooter {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-base);
+}
+
+.address {
+  font-style: normal;
+}
+.copyright {
+  font-size: 100%;
+}
+
+
+
 /* 공통 트위터 */
 /* .twitter__container{
   display: flow-root;
@@ -452,6 +471,13 @@ iframe {
     transform: translateX(0);
   }
 
+  
+  /* 모바일 푸터 */
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
 }
 
 /* 데스크탑 디바이스 */
@@ -553,6 +579,11 @@ iframe {
     /* grid-row: 3/4;
     grid-column: 6/13; */
     grid-area: board;
+  }
+
+   /* 데스크탑 푸터 */
+   .appFooter {
+    align-items: center;
   }
 
 }
