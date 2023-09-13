@@ -121,7 +121,6 @@ fieldset {
 /* 공통 메인 메뉴 */
 
 .menu__list {
-  background-color: yellow;
   padding: var(--spacing-lg);
 }
 
@@ -200,25 +199,38 @@ fieldset {
   line-height: 1.5;
   margin-top: var(--spacing-base);
 }
-
-.news__videoContainer .iframeWrapper{
-  aspect-ratio: 16/9;
+/* 공통 추천서적 */
+.book__cover {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* .book__coverImage {
+  max-width: 
+} */
+.book__coverCaption {
+  margin-top: var(--spacing-sm);
 }
 
-.news__videoContainer iframe {
-  width: 100%;
-  height: 100%;
+.book__info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
+
+.ratingStar {
+  font-size: var(--text-lg);
+}
+
 
 /* 공통 트위터 */
-.twitter__container{
-  background-color: yellow;
+/* .twitter__container{
   display: flow-root;
 }
 
 .twitter__userInfo{
   display: inline-flex;
-  background: aqua;
+
 }
 
 .twitter__userProfile {
@@ -231,7 +243,7 @@ fieldset {
   border-radius: 50%;
   object-fit: cover;
   object-position: 30% 80%;
-}
+} */
 
 
 /* 모바일 디바이스 */
