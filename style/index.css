@@ -105,7 +105,7 @@ fieldset {
 }
 
 .formInput__input {
-  border: 1px solid var(--silver);
+  border: 1px solid var(--silverㅍ);
   border-radius: 0.25rem;
   height: 2rem;
   padding: 0.125rem 0.75rem;
@@ -216,6 +216,25 @@ fieldset {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
   }
+  
+  /* 모바일 메인 메뉴 */
+  .menu__list {
+    background: var(--yellow-opacity);
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    transform: translateX(-150%);
+    transition: all 400ms;
+    /* transform: translateX(-80%); */
+  }
+
+  .is--active.menu__list {
+    transform: translateX(0);
+  }
+
 }
 
 /* 데스크탑 디바이스 */
